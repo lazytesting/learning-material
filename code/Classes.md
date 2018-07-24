@@ -30,11 +30,11 @@ Why is that useful?
 ```
 class Main {
   public static void main(String[] args) {
-    Hoi hoi = new Hoi();
-    Hoi hi = new Hoi();
-    hi.SetLanguageEN();
-    hoi.ZegHoi();
-    hi.ZegHoi();
+    Hoi hoi = new Hoi(); // creating new instance of Hoi class
+    Hoi hi = new Hoi(); // creating 2nd instance of Hoi class
+    hi.SetLanguageEN(); // on the hi class call method to set language to EN
+    hoi.ZegHoi(); // get the text on first instance
+    hi.ZegHoi(); // get the text on second instance, note that the results are different
   }
 }
 ```
